@@ -6,8 +6,10 @@ set(CMAKE_CXX_STANDARD 14)
 include_directories(.)
 
 add_library(rsocket SHARED
-        rsocket.cpp
-        rsocket.h
+        server_socket.h
+        server_socket.cpp
+        client_socket.h
+        client_socket.cpp
         utilities.cpp
         utilities.h)
 
